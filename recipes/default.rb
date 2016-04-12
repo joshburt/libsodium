@@ -22,5 +22,5 @@ end
 execute 'ldconfig' do
   action :nothing
   command 'ldconfig'
-  subscribes :create, 'template[/etc/ld.so.conf.d/libsodium.conf]', :immediately
+  subscribes :run, 'template[/etc/ld.so.conf.d/libsodium.conf]', :immediately
 end

@@ -6,7 +6,7 @@ Based off zeromq-cookbook by Johannes Plunien plu@pqpq.de.
 Requirements
 ------------
 #### packages
-- `build-essential` - openbazaar needs build-essential for compiling
+- `build-essential` - libsodium needs build-essential for compiling
 
 Platform
 ------------
@@ -33,37 +33,37 @@ Attributes
     <td><tt>['libsodium']['base']</tt></td>
     <td>String</td>
     <td>Base directory for installing.</td>
-    <td><tt>true</tt></td>
+    <td><tt>'/usr/local'</tt></td>
   </tr>
   <tr>
     <td><tt>['libsodium']['src']</tt></td>
     <td>String</td>
     <td>Directory for git cloning source into.</td>
-    <td><tt>true</tt></td>
+    <td><tt>'/usr/local/src/libsodium'</tt></td>
   </tr>
   <tr>
     <td><tt>['libsodium']['install_method']</tt></td>
     <td>String</td>
     <td>Method of installation.</td>
-    <td><tt>true</tt></td>
+    <td><tt>'source'</tt></td>
   </tr>
   <tr>
     <td><tt>['libsodium']['src_url']</tt></td>
     <td>String</td>
     <td>Remote git repository URL.</td>
-    <td><tt>true</tt></td>
+    <td><tt>'https://github.com/jedisct1/libsodium.git'</tt></td>
   </tr>
   <tr>
     <td><tt>['libsodium']['version']</tt></td>
     <td>String</td>
     <td>Version to install. (git branch, or tags)</td>
-    <td><tt>true</tt></td>
+    <td><tt>'1.0.10'</tt></td>
   </tr>
   <tr>
     <td><tt>['libsodium']['lib']</tt></td>
     <td>String</td>
     <td>The binary object name that is created.</td>
-    <td><tt>true</tt></td>
+    <td><tt>'libsodium.so'</tt></td>
   </tr>
 </table>
 

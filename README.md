@@ -17,7 +17,6 @@ Attributes
 ----------
 * node['libsodium']['base'] = '/usr/local'
 * node['libsodium']['src'] = '/usr/local/src/libsodium'
-* node['libsodium']['install_method'] = 'source'
 * node['libsodium']['src_url'] = 'https://github.com/jedisct1/libsodium.git'
 * node['libsodium']['version'] = '1.0.10'
 * node['libsodium']['lib'] = 'libsodium.so'
@@ -40,12 +39,6 @@ Attributes
     <td>String</td>
     <td>Directory for git cloning source into.</td>
     <td><tt>'/usr/local/src/libsodium'</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['libsodium']['install_method']</tt></td>
-    <td>String</td>
-    <td>Method of installation.</td>
-    <td><tt>'source'</tt></td>
   </tr>
   <tr>
     <td><tt>['libsodium']['src_url']</tt></td>

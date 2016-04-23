@@ -6,20 +6,18 @@ Based off zeromq-cookbook by Johannes Plunien plu@pqpq.de.
 Requirements
 ------------
 #### packages
-- `build-essential` - libsodium needs build-essential for compiling
+- `build-essential`
+- `seven_zip`
+- `chef_handler`
+- `windows`
 
 Platform
 ------------
 * Tested on
-  * Ubuntu 14.04
+    * Ubuntu 14.04
 
 Attributes
 ----------
-* node['libsodium']['base'] = '/usr/local'
-* node['libsodium']['src'] = '/usr/local/src/libsodium'
-* node['libsodium']['src_url'] = 'https://github.com/jedisct1/libsodium.git'
-* node['libsodium']['version'] = '1.0.10'
-* node['libsodium']['lib'] = 'libsodium.so'
 
 <table>
   <tr>

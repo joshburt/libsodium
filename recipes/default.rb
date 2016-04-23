@@ -21,8 +21,7 @@ end
 ###############################################################################
 # Execute *nix still compile workflow
 ###############################################################################
-libsodium_builder 'libsodium compile and install' do
-end
+libsodium_builder 'libsodium compile and install'
 
 ###############################################################################
 # Configure ourselves in the library cache
